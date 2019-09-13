@@ -1,3 +1,247 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav a {
+	color: gray;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: black;
+}
+
+.header-content {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.header-text-content {
+	width: 45%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.header-text-content h1 {
+	font-size: 50px;
+}
+
+.headerStartedBtn {
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 0px 20px 0px 20px;
+}
+
+.headerStartedBtn:hover {
+	background: black;
+	color: white;
+}
+
+section {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.featAbout {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px 20px 0px;
+}
+
+.featAbout div {
+	width: 45%;
+}
+
+.featAbout h2 {
+	font-size: 20px;
+}
+
+section img {
+	max-width: 1024px;
+	width: 100%;
+}
+
+.servProVis {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px 20px 0px;
+}
+
+.servProVis div {
+	width: 30%;
+}
+
+.servProVis h2 {
+	font-size: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+footer address {
+	margin-bottom: 20px;
+}
+
+address p{
+	margin: 15px 0px 15px 0px;
+}
+
+.copyright {
+	margin: 0 auto;
+}
+/* Services Page Styling */
+.services-page .header-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.services-page .header-content h1{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.services-page section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 20px 0px 20px 0px;
+}
+
+.services-page section div {
+	width: 90%;
+}
+
+.services-page section h2{
+	font-size: 20px;
+}
+
+.services-page section p {
+	margin-bottom: 20px;
+}
+
+.services-page section a {
+	color: black;
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 5px 40px 5px 40px;
+	border-radius: 5px;
+}
+
+.services-page section a:hover {
+	color: white;
+	background: black;
+}
+
+.services-page .left-column div {
+	margin: 20px 0px 20px 0px;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+.services-page .right-column div{
+	margin: 20px 0px 20px 50px;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+.services-page .footer-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.services-page .footer-text {
+	width: 50%;
+}
+
+.services-page .footer-text h2 {
+	font-size: 20px;
+}
+
+.services-page .footer-text p {
+	margin-bottom: 10px;
+}
+
+.services-page .footer-text ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 40px;
+}
